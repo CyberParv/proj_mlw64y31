@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-heading: "Barlow";
+  --font-body: "Barlow";
+
+  --background: 0 0% 100%;
+  --foreground: 0 0% 4%;
+
+  --card: 0 0% 6%;
+  --card-foreground: 0 0% 100%;
+
+  --primary: 0 68% 50%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 0 0% 75%;
+  --secondary-foreground: 0 0% 4%;
+
+  --accent: 0 68% 50%;
+  --accent-foreground: 0 0% 100%;
+
+  --muted: 0 0% 10%;
+  --muted-foreground: 0 0% 64%;
+
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 0 0% 16%;
+  --input: 0 0% 16%;
+  --ring: 0 68% 50%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  @apply bg-background text-foreground font-body antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-heading;
+}
